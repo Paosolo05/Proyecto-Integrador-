@@ -2,10 +2,10 @@
 Juego del computador Adivina tu número
 ## Nombre
 Paola Solorzano
+## 📖 Introducción
+A continuación, se presenta el análisis del programa desarrollado para el juego en el que la computadora debe adivinar un número del 1 al 100 que el usuario ha pensado. Se ha implementado el algoritmo de búsqueda binaria para garantizar que los intentos sean siempre los mínimos posibles. Dicho análisis se ha dividido en cuatro apartados: las funcionalidades del sistema, la estructura lógica del programa, la organización del código y las herramientas de desarrollo utilizadas.
 ## Objetivo del sistema
 Implementar un algoritmo que mantenga dos variables (límite inferior y superior), calcule el punto medio en cada ronda, y actualice esos límites según la respuesta del usuario, asegurándose de que el rango nunca se vacíe y de detectar si el usuario está dando respuestas incoherentes.
-## Introducción
-A continuación, se presenta el análisis del programa desarrollado para el juego en el que la computadora debe adivinar un número del 1 al 100 que el usuario ha pensado. Se ha implementado el algoritmo de búsqueda binaria para garantizar que los intentos sean siempre los mínimos posibles. Dicho análisis se ha dividido en cuatro apartados: las funcionalidades del sistema, la estructura lógica del programa, la organización del código y las herramientas de desarrollo utilizadas.
 ## Funcionalidades del sistema 
 Las funcionalidades principales que el sistema ofrece al usuario son las siguientes:
 - **Adivinanza mediante punto medio**: La función central del sistema calcula el número situado en el centro del rango posible en cada turno. Por ejemplo, al iniciar con el rango de 1 a 100, la primera pregunta siempre es por el número 50, lo que permite descartar la mitad de las opciones en cada iteración.
@@ -15,6 +15,13 @@ Las funcionalidades principales que el sistema ofrece al usuario son las siguien
 - **Detección de contradicciones o respuestas erróneas**: Si el usuario proporciona respuestas lógicamente incoherentes (por ejemplo, decir "mayor" cuando ya no quedan números superiores), el rango de búsqueda se vacía. El programa detecta esta situación y finaliza la partida mostrando un mensaje de contradicción, sin llegar a adivinar el número.
 - **Rejugabilidad**: Se ha incorporado un bucle en la función main() que permite al usuario jugar partidas de manera continua. Al finalizar cada ronda, el sistema pregunta si se desea jugar otra vez y solo finaliza la ejecución cuando el usuario responde "n".
 ## Estructura lógica del programa 
+La lógica interna del programa sigue un flujo secuencial claro, basado en la reducción progresiva del rango de búsqueda. Dicho flujo se describe a continuación:
+### 1.	Inicio y configuración inicial
+### 2.	Preparación de la partida
+### 3.	Bucle principal de adivinanzas
+### 4.	Procesamiento de la respuesta (árbol de decisión)
+### 5.	Salida por fallo (contradicción
+### 6.	Bucle externo de repetición
 ## Organización del código 
 ## Uso de herramientas de desarrollo 
 ## Fecha 
