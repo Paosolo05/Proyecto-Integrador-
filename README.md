@@ -48,7 +48,7 @@ El código fuente ha sido organizado siguiendo criterios de legibilidad y manten
 - ***Formato visual para la consola***:
   Se han utilizado líneas separadoras ("=" * 50) y saltos de línea (\n) para estructurar la salida en pantalla. Aunque no afecta a la lógica, mejora significativamente la experiencia de usuario.
 - ***Protección del punto de entrada***:
-  Se ha añadido la cláusula if name == "main": para garantizar que el juego solo se ejecute cuando el archivo se corre directamente, y no cuando se importa como módulo en otro programa. Esta es una práctica recomendada en el desarrollo con Python.
+  Se ha añadido la cláusula if __ name __ == "__ main __": para garantizar que el juego solo se ejecute cuando el archivo se corre directamente, y no cuando se importa como módulo en otro programa. Esta es una práctica recomendada en el desarrollo con Python.
 ## 📝 Uso de herramientas de desarrollo 
 Para la creación, depuración y prueba del programa, se ha empleado las siguientes herramientas:
 - __Lenguaje de programación__: Se ha utilizado Python 3, aprovechando su sintaxis clara y su idoneidad para aplicaciones de consola.
