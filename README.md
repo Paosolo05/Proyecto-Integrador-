@@ -55,7 +55,6 @@ Para la creación, depuración y prueba del programa, se ha empleado las siguien
 - __Librerías y dependencias__: El programa no utiliza ninguna librería externa. Solo emplea funciones integradas del núcleo de Python (print(), input(), y métodos de cadenas como strip() y lower()). Esto garantiza que el código sea completamente portable y no requiera instalaciones adicionales.
 - __Entorno de desarrollo (IDE)__: El código fue escrito en Visual Studio Code, aunque es compatible con cualquier otro editor (PyCharm, Sublime Text, IDLE, etc.) sin necesidad de ajustes.
 - __Ejecución y pruebas__: Para ejecutar el programa, se abre la terminal en la carpeta del proyecto y se escribe el comando python nombre_del_archivo.py. Durante el desarrollo, se realizaron pruebas con distintos escenarios: números límite (1 y 100), respuestas inválidas y contradicciones deliberadas, con el fin de verificar la robustez del sistema en todas las situaciones posibles.
-  
 - __Control de versiones__: Aunque no es un requisito explícito de la entrega, el código se mantiene limpio, sin rutas absolutas ni credenciales, por lo que podría ser subido fácilmente a un repositorio de GitHub para llevar un registro de las versiones.
 ## Fecha 
 28 de Junio del 2026
