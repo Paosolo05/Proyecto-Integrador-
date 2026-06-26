@@ -17,11 +17,24 @@ Las funcionalidades principales que el sistema ofrece al usuario son las siguien
 ## Estructura lógica del programa 
 La lógica interna del programa sigue un flujo secuencial claro, basado en la reducción progresiva del rango de búsqueda. Dicho flujo se describe a continuación:
 ### 1.	Inicio y configuración inicial
+Al ejecutar el archivo, se invoca la función main(), que a su vez llama a adivinar_numero(). Esta función muestra un encabezdo y solicita al usuario que piense en un número, deteniendo la ejecución con input("Presiona ENTER...") para dar tiempo al jugador.
 ### 2.	Preparación de la partida
+Antes de comenzar las preguntas, se inicializan los límites del rango (minimo = 1, maximo = 100) y el contador de intentos se establece en cero.
 ### 3.	Bucle principal de adivinanzas
+Se ejecuta un bucle while que se mantiene activo mientras minimo sea menor o igual a maximo. Dentro de este bucle:
+-	Se calcula el punto medio mediante división entera: intento = (minimo + maximo)/2.
+-	Se incrementa el contador de intentos.
+-	Se muestra el número propuesto y se espera la respuesta del usuario.
 ### 4.	Procesamiento de la respuesta (árbol de decisión)
-### 5.	Salida por fallo (contradicción
+Mediante un bloque if/elif/else, se evalúa la entrada del usuario:
+-	Si es "correcto", se muestra un mensaje de éxito con el número de intentos y se ejecuta return para finalizar la partida.
+-	Si es "mayor", se actualiza el límite inferior: minimo = intento + 1.
+-	Si es "menor", se actualiza el límite superior: maximo = intento - 1.
+-	Si no es ninguna de las anteriores, se notifica el error y se decrementa el contador de intentos para no contabilizar esa respuesta inválida.
+### 5.	Salida por fallo (contradicción)
+Si el bucle while termina porque minimo ha superado a maximo, se interpreta que el usuario ha dado respuestas contradictorias. El programa imprime un mensaje informando de la imposibilidad de encontrar el número y finaliza la ronda sin éxito.
 ### 6.	Bucle externo de repetición
+Una vez terminada la partida (por acierto o por fallo), el flujo regresa a main(), donde se pregunta al usuario si desea jugar nuevamente. Si la respuesta no es "s", se rompe el bucle y se muestra el mensaje de despedida.
 ## Organización del código 
 ## Uso de herramientas de desarrollo 
 ## Fecha 
