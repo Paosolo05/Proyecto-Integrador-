@@ -4,9 +4,9 @@ Juego del computador Adivina tu número
 Paola Solorzano
 ## 📖 Introducción
 A continuación, se presenta el análisis del programa desarrollado para el juego en el que la computadora debe adivinar un número del 1 al 100 que el usuario ha pensado. Se ha implementado el algoritmo de búsqueda binaria para garantizar que los intentos sean siempre los mínimos posibles. Dicho análisis se ha dividido en cuatro apartados: las funcionalidades del sistema, la estructura lógica del programa, la organización del código y las herramientas de desarrollo utilizadas.
-## Objetivo del sistema
+## 💡 Objetivo del sistema
 Implementar un algoritmo que mantenga dos variables (límite inferior y superior), calcule el punto medio en cada ronda, y actualice esos límites según la respuesta del usuario, asegurándose de que el rango nunca se vacíe y de detectar si el usuario está dando respuestas incoherentes.
-## Funcionalidades del sistema 
+## ⚙️ Funcionalidades del sistema 
 Las funcionalidades principales que el sistema ofrece al usuario son las siguientes:
 - **Adivinanza mediante punto medio**: La función central del sistema calcula el número situado en el centro del rango posible en cada turno. Por ejemplo, al iniciar con el rango de 1 a 100, la primera pregunta siempre es por el número 50, lo que permite descartar la mitad de las opciones en cada iteración.
 - **Rango fijo predefinido**: Se han establecido los límites directamente en las variables minimo = 1 y maximo = 100. Aunque el rango podría modificarse en el futuro, para esta versión se ha dejado fijo según lo solicitado.
@@ -14,7 +14,7 @@ Las funcionalidades principales que el sistema ofrece al usuario son las siguien
 - **Conteo de intentos**: Se lleva un registro numérico de cuántas preguntas ha realizado la máquina. Esto permite al usuario verificar que el objetivo de 7 intentos o menos se cumple.
 - **Detección de contradicciones o respuestas erróneas**: Si el usuario proporciona respuestas lógicamente incoherentes (por ejemplo, decir "mayor" cuando ya no quedan números superiores), el rango de búsqueda se vacía. El programa detecta esta situación y finaliza la partida mostrando un mensaje de contradicción, sin llegar a adivinar el número.
 - **Rejugabilidad**: Se ha incorporado un bucle en la función main() que permite al usuario jugar partidas de manera continua. Al finalizar cada ronda, el sistema pregunta si se desea jugar otra vez y solo finaliza la ejecución cuando el usuario responde "n".
-## Estructura lógica del programa 
+## 📑 Estructura lógica del programa 
 La lógica interna del programa sigue un flujo secuencial claro, basado en la reducción progresiva del rango de búsqueda. Dicho flujo se describe a continuación:
 ### 1.	Inicio y configuración inicial
 Al ejecutar el archivo, se invoca la función main(), que a su vez llama a adivinar_numero(). Esta función muestra un encabezdo y solicita al usuario que piense en un número, deteniendo la ejecución con input("Presiona ENTER...") para dar tiempo al jugador.
@@ -35,7 +35,7 @@ Mediante un bloque if/elif/else, se evalúa la entrada del usuario:
 Si el bucle while termina porque minimo ha superado a maximo, se interpreta que el usuario ha dado respuestas contradictorias. El programa imprime un mensaje informando de la imposibilidad de encontrar el número y finaliza la ronda sin éxito.
 ### 6.	Bucle externo de repetición
 Una vez terminada la partida (por acierto o por fallo), el flujo regresa a main(), donde se pregunta al usuario si desea jugar nuevamente. Si la respuesta no es "s", se rompe el bucle y se muestra el mensaje de despedida.
-## Organización del código 
+## 📌 Organización del código 
 El código fuente ha sido organizado siguiendo criterios de legibilidad y mantenibilidad. Las decisiones de organización más destacadas son:
 - ***División en funciones modulares***:
   Se han creado dos funciones claramente diferenciadas. adivinar_numero() encapsula toda la lógica de una partida individual, mientras que main() gestiona el bucle de repetición y la salida del juego. Esta separación facilita futuras modificaciones o ampliaciones.
@@ -49,7 +49,7 @@ El código fuente ha sido organizado siguiendo criterios de legibilidad y manten
   Se han utilizado líneas separadoras ("=" * 50) y saltos de línea (\n) para estructurar la salida en pantalla. Aunque no afecta a la lógica, mejora significativamente la experiencia de usuario.
 - ***Protección del punto de entrada***:
   Se ha añadido la cláusula if name == "main": para garantizar que el juego solo se ejecute cuando el archivo se corre directamente, y no cuando se importa como módulo en otro programa. Esta es una práctica recomendada en el desarrollo con Python.
-## Uso de herramientas de desarrollo 
+## 📝 Uso de herramientas de desarrollo 
 Para la creación, depuración y prueba del programa, se ha empleado las siguientes herramientas:
 - __Lenguaje de programación__: Se ha utilizado Python 3, aprovechando su sintaxis clara y su idoneidad para aplicaciones de consola.
 - __Librerías y dependencias__: El programa no utiliza ninguna librería externa. Solo emplea funciones integradas del núcleo de Python (print(), input(), y métodos de cadenas como strip() y lower()). Esto garantiza que el código sea completamente portable y no requiera instalaciones adicionales.
