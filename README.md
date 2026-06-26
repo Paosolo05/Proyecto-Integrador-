@@ -39,7 +39,7 @@ Una vez terminada la partida (por acierto o por fallo), el flujo regresa a main(
 El código fuente ha sido organizado siguiendo criterios de legibilidad y mantenibilidad. Las decisiones de organización más destacadas son:
 - ***División en funciones modulares***:
   Se han creado dos funciones claramente diferenciadas. adivinar_numero() encapsula toda la lógica de una partida individual, mientras que main() gestiona el bucle de repetición y la salida del juego. Esta separación facilita futuras modificaciones o ampliaciones.
-- ***Nomenclatura descriptiva en español**:
+- ***Nomenclatura descriptiva en español***:
   Se han elegido nombres de variables autoexplicativos como minimo, maximo, intento y respuesta, en lugar de abreviaturas crípticas. Esto mejora la legibilidad y la comprensión del flujo del programa.
 - ***Documentación inicial***:
   Se ha incluido un bloque de comentarios con triple comilla (""") al inicio del archivo, explicando el propósito del juego, las reglas y la dinámica de interacción. Este bloque actúa como documentación básica para cualquier lector del código.
@@ -50,7 +50,7 @@ El código fuente ha sido organizado siguiendo criterios de legibilidad y manten
 - ***Protección del punto de entrada***:
   Se ha añadido la cláusula if name == "main": para garantizar que el juego solo se ejecute cuando el archivo se corre directamente, y no cuando se importa como módulo en otro programa. Esta es una práctica recomendada en el desarrollo con Python.
 ## Uso de herramientas de desarrollo 
-Para la creación, depuración y prueba del programa, el estudiante ha empleado las siguientes herramientas:
+Para la creación, depuración y prueba del programa, se ha empleado las siguientes herramientas:
 - __Lenguaje de programación__: Se ha utilizado Python 3, aprovechando su sintaxis clara y su idoneidad para aplicaciones de consola.
 - __Librerías y dependencias__: El programa no utiliza ninguna librería externa. Solo emplea funciones integradas del núcleo de Python (print(), input(), y métodos de cadenas como strip() y lower()). Esto garantiza que el código sea completamente portable y no requiera instalaciones adicionales.
 - __Entorno de desarrollo (IDE)__: El código fue escrito en Visual Studio Code, aunque es compatible con cualquier otro editor (PyCharm, Sublime Text, IDLE, etc.) sin necesidad de ajustes.
