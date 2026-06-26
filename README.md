@@ -38,10 +38,10 @@ Una vez terminada la partida (por acierto o por fallo), el flujo regresa a main(
 ## Organización del código 
 El código fuente ha sido organizado siguiendo criterios de legibilidad y mantenibilidad. Las decisiones de organización más destacadas son:
 
-- División en funciones modulares
+- *División en funciones modulares*:
   Se han creado dos funciones claramente diferenciadas. adivinar_numero() encapsula toda la lógica de una partida individual, mientras que main() gestiona el bucle de repetición y la salida del juego. Esta separación facilita futuras modificaciones o ampliaciones.
 
-- Nomenclatura descriptiva en español
+- *Nomenclatura descriptiva en español*:
   Se han elegido nombres de variables autoexplicativos como minimo, maximo, intento y respuesta, en lugar de abreviaturas crípticas. Esto mejora la legibilidad y la comprensión del flujo del programa.
 
 - Documentación inicial
