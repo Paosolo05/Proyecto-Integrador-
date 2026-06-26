@@ -36,6 +36,25 @@ Si el bucle while termina porque minimo ha superado a maximo, se interpreta que 
 ### 6.	Bucle externo de repetición
 Una vez terminada la partida (por acierto o por fallo), el flujo regresa a main(), donde se pregunta al usuario si desea jugar nuevamente. Si la respuesta no es "s", se rompe el bucle y se muestra el mensaje de despedida.
 ## Organización del código 
+El código fuente ha sido organizado siguiendo criterios de legibilidad y mantenibilidad. Las decisiones de organización más destacadas son:
+
+- División en funciones modulares
+  Se han creado dos funciones claramente diferenciadas. adivinar_numero() encapsula toda la lógica de una partida individual, mientras que main() gestiona el bucle de repetición y la salida del juego. Esta separación facilita futuras modificaciones o ampliaciones.
+
+- Nomenclatura descriptiva en español
+  Se han elegido nombres de variables autoexplicativos como minimo, maximo, intento y respuesta, en lugar de abreviaturas crípticas. Esto mejora la legibilidad y la comprensión del flujo del programa.
+
+- Documentación inicial
+  Se ha incluido un bloque de comentarios con triple comilla (""") al inicio del archivo, explicando el propósito del juego, las reglas y la dinámica de interacción. Este bloque actúa como documentación básica para cualquier lector del código.
+
+- Manejo de errores integrado
+  En lugar de recurrir a estructuras complejas como try/except, se ha optado por un condicional else que filtra las entradas no válidas y proporciona retroalimentación inmediata al usuario, manteniendo la simplicidad del código.
+
+- Formato visual para la consola
+  Se han utilizado líneas separadoras ("=" * 50) y saltos de línea (\n) para estructurar la salida en pantalla. Aunque no afecta a la lógica, mejora significativamente la experiencia de usuario.
+
+- Protección del punto de entrada
+  Se ha añadido la cláusula if __name__ == "__main__": para garantizar que el juego solo se ejecute cuando el archivo se corre directamente, y no cuando se importa como módulo en otro programa. Esta es una práctica recomendada en el desarrollo con Python.
 ## Uso de herramientas de desarrollo 
 ## Fecha 
 28 de Junio del 2026
