@@ -1,7 +1,7 @@
 # Nombre del proyecto  
 Juego del computador Adivina tu número
 ## Nombre
-Paola Solorzano
+Paola Damaris Solorzano Moreira
 ## 📖 Introducción
 A continuación, se presenta el análisis del programa desarrollado para el juego en el que la computadora debe adivinar un número del 1 al 100 que el usuario ha pensado. Se ha implementado el algoritmo de búsqueda binaria para garantizar que los intentos sean siempre los mínimos posibles. Dicho análisis se ha dividido en cuatro apartados: las funcionalidades del sistema, la estructura lógica del programa, la organización del código y las herramientas de desarrollo utilizadas.
 ## 💡 Objetivo del sistema
